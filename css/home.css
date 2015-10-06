@@ -50,17 +50,17 @@ body{
     background-color: rgba(0, 0, 0, 0.5);
 }
 #portada_content {
-    width: 335px;
+   	width: 335px;
 	margin: auto;
-	height: 800px;
 	z-index: 2;
 	position: absolute;
 	left: 0px;
 	right: 0px;
-	color: #FFFFFF;
+	color: rgb(255, 255, 255);
 	text-align: center;
-	top: 0;
-	bottom: 0;
+	top: 0px;
+	bottom: 0px;
+	height: 480px;
 }
 #portada_logo {
     width: 250px;
@@ -77,4 +77,6 @@ body{
     line-height: 55px;
     background-color: #F49828;
     font-size: 30px;
+    position: absolute;
+    bottom: 0;
 }
