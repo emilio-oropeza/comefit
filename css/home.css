@@ -78,12 +78,17 @@ body{
 #menus{
 	height: 800px;
 }
+#menus_content {
+    margin: auto;
+    width: 900px;
+}
 .platillos{
 	width: 300px;
     height: 300px;
     position: relative;
     display: inline-block;
     cursor: pointer;
+    float: left;
 }
 .platillos_fotos{
 	width: 100%;
