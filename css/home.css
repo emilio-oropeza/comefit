@@ -4,34 +4,29 @@ body{
 }
 .elemento {
     width: 100%;
-    display: inline-block;
 }
 #menu {
     background-color: #000;
-    height: 75px;
-    border-bottom: 10px solid #F49828;
-    position: relative;
+    height: 45px;
+    border-bottom: 3px solid #F49828;
+    position: fixed;
+    top: 0;
+    z-index: 3;
 }
 #menu_content {
     width: 800px;
     margin: auto;
     text-align: center;
-    font-size: 30px;
-    padding-top: 15px;
-}
-#inicio {
-    margin: 0px 30px;
+    font-size: 25px;
+    line-height: 45px;
 }
 .menu_element {
     color: #FFFFFF;
     display: inline-block;
-    margin: 0px 15px;	
+    margin: 0px 45px;	
 }
 .menu_element:hover {
 	color: #F49828;
-}
-#menu_content .logos {
-    font-size: 40px;
 }
 .logos span {
     font-style: italic;
@@ -47,7 +42,7 @@ body{
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.1);
 }
 #portada_content {
    	width: 335px;
@@ -80,3 +75,45 @@ body{
     position: absolute;
     bottom: 0;
 }
+#menus{
+	height: 800px;
+}
+.platillos{
+	width: 300px;
+    height: 300px;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+.platillos_fotos{
+	width: 100%;
+    height: 100%;
+    position: relative;
+    background-position: center;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+}
+.platillos_desc{
+	width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 5;
+    background-color: rgba(0,0,0,0.5);
+    color: #FFFFFF;
+    top: 0px;
+    display: block;
+    visibility: hidden;
+}
+span.desc_titulo {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    margin: 50px 0px 20px;
+    font-size: 25px;
+}
+span.desc_txt {
+    display: inline-block;
+    text-align: center;
+    margin: 20px;
+}
+#pechuga{background-image: url("../images/menu/pechuga.jpg");}
