@@ -176,6 +176,9 @@ span.desc_txt {
     #menu_display {
         display: block;
     }
+    .platillos_desc{
+        display: block;
+    }
 }
 @media(max-width: 600px){
     #menus_content {

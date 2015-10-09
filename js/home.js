@@ -2,10 +2,14 @@ $(document).ready(function(){
 	$(".platillos").each(function(){
 		var platillos_desc = $(this).find(".platillos_desc");
 		$(this).on( "mouseenter", function() {
-    		$(platillos_desc).fadeIn("fast");
+			if($(window).width() > 800){
+    			$(platillos_desc).fadeIn("fast");
+    		}
   		})
   		.on( "mouseleave", function() {
-   			$(platillos_desc).fadeOut("slow");
+  			if($(window).width() > 800){
+   				$(platillos_desc).fadeOut("slow");
+   			}
  		});
 	});
 	$("#menu_display").click(function(){
