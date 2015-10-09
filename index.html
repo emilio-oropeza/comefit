@@ -8,6 +8,7 @@
 	<link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet" type="text/css">
 	<link href="css/home.css" rel="stylesheet" type="text/css">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+	<script type="text/javascript" src="js/home.js"></script>
 	<style>
 		html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
 			background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
@@ -23,8 +24,13 @@
 <body>
 	<div id="content">
 		<div id="menu" class="elemento">
+			<div id="menu_display">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
 			<div id="menu_content">
-				<a href="#menu"><span class="menu_element">menús</span></a>
+				<a href="#menus"><span class="menu_element">menús</span></a>
 				<a href="#menu"><span class="menu_element">¿quiénes somos?</span></a>		
 				<a href="#menu"><span class="menu_element">contacto</span></a>
 				<a href="#portada"><span class="menu_element logos">come<span>fit</span></span></a>
@@ -38,89 +44,65 @@
 			</div>			
 		</div>
 		<div id="menus" class="elemento">
+			<div id="menus_title">
+				<span>Menus</span><br>
+				ven a probar los menus que tenemos para ti
+			</div>
 			<div id="menus_content">
 				<div class="platillos light">
-					<div class="platillos_fotos" id="pechuga"></div>
+					<div class="platillos_fotos" id="salmon"></div>
 					<div class="platillos_desc">
-						<span class="desc_titulo">Pechuga de pollo de pollo</span><br>
-						<span class="desc_txt">As they rounded a bend in the path that ran beside the river, Lara recognized the silhouette of a fig tree atop a nearby hill. The weather was hot and the days were long. The fig tree was in full leaf, but not yet bearing fruit.</span>
+						<span class="desc_titulo">Salmón en costra de limón</span><br>
+						<span class="desc_txt">
+							-	Salmon asado con perejil, miel, mostaza, limon, ajo, avena molida<br>
+							-	verduras al vapor<br>
+							-	pasta integral o arroz integral<br>
+							-	Sopa de verduras o consome de pollo
+						</span>
+					</div>
+				</div>
+				<div class="platillos light">
+					<div class="platillos_fotos" id="teriyaki"></div>
+					<div class="platillos_desc">
+						<span class="desc_titulo">Pollo Teriyaki</span><br>
+						<span class="desc_txt">
+							-	Pechuga de pollo asada en trozos mezclado con brócoli, zanahoria, calabaza, soya, mostaza y ajonjoli<br>
+							-	4 torrillas de maíz o 1 taza de arroz/pasta integral<br>
+							-	Sopa de verduras o consome de pollo<br>
+						</span>
+					</div>
+				</div>
+				<div class="platillos light">
+					<div class="platillos_fotos" id="crujimi"></div>
+					<div class="platillos_desc">
+						<span class="desc_titulo">Crujimi</span><br>
+						<span class="desc_txt">
+							-	3 tiritas de surimi mezcladas con, zanahoria, pepino, limon y aguacate
+							-	2 tostadas horneadas o 1 taza de arroz/pasta integral
+							-	Sopa de verduras o consome de pollo
+						</span>
 					</div>
 				</div>
 				<div class="platillos light">
 					<div class="platillos_fotos" id="pechuga"></div>
 					<div class="platillos_desc">
-						<span class="desc_titulo">Pechuga de pollo de pollo</span><br>
-						<span class="desc_txt">As they rounded a bend in the path that ran beside the river, Lara recognized the silhouette of a fig tree atop a nearby hill. The weather was hot and the days were long. The fig tree was in full leaf, but not yet bearing fruit.</span>
+						<span class="desc_titulo">Pechuga de pollo asada</span><br>
+						<span class="desc_txt">
+							-	Pechuga de pollo asada
+							-	Verduras al vapor o ensalada verde
+							-	Sopa de verduras o consome de pollo
+						</span>
 					</div>
 				</div>
 				<div class="platillos light">
-					<div class="platillos_fotos" id="pechuga"></div>
+					<div class="platillos_fotos" id="pescado"></div>
 					<div class="platillos_desc">
-						<span class="desc_titulo">Pechuga de pollo de pollo</span><br>
-						<span class="desc_txt">As they rounded a bend in the path that ran beside the river, Lara recognized the silhouette of a fig tree atop a nearby hill. The weather was hot and the days were long. The fig tree was in full leaf, but not yet bearing fruit.</span>
-					</div>
-				</div>
-				<div class="platillos light">
-					<div class="platillos_fotos" id="pechuga"></div>
-					<div class="platillos_desc">
-						<span class="desc_titulo">Pechuga de pollo de pollo</span><br>
-						<span class="desc_txt">As they rounded a bend in the path that ran beside the river, Lara recognized the silhouette of a fig tree atop a nearby hill. The weather was hot and the days were long. The fig tree was in full leaf, but not yet bearing fruit.</span>
-					</div>
-				</div>
-				<div class="platillos light">
-					<div class="platillos_fotos" id="pechuga"></div>
-					<div class="platillos_desc">
-						<span class="desc_titulo">Pechuga de pollo de pollo</span><br>
-						<span class="desc_txt">As they rounded a bend in the path that ran beside the river, Lara recognized the silhouette of a fig tree atop a nearby hill. The weather was hot and the days were long. The fig tree was in full leaf, but not yet bearing fruit.</span>
-					</div>
-				</div>
-				<div class="platillos light">
-					<div class="platillos_fotos" id="pechuga"></div>
-					<div class="platillos_desc">
-						<span class="desc_titulo">Pechuga de pollo de pollo</span><br>
-						<span class="desc_txt">As they rounded a bend in the path that ran beside the river, Lara recognized the silhouette of a fig tree atop a nearby hill. The weather was hot and the days were long. The fig tree was in full leaf, but not yet bearing fruit.</span>
-					</div>
-				</div>
-				<div class="platillos light">
-					<div class="platillos_fotos" id="pechuga"></div>
-					<div class="platillos_desc">
-						<span class="desc_titulo">Pechuga de pollo de pollo</span><br>
-						<span class="desc_txt">As they rounded a bend in the path that ran beside the river, Lara recognized the silhouette of a fig tree atop a nearby hill. The weather was hot and the days were long. The fig tree was in full leaf, but not yet bearing fruit.</span>
-					</div>
-				</div>
-				<div class="platillos light">
-					<div class="platillos_fotos" id="pechuga"></div>
-					<div class="platillos_desc">
-						<span class="desc_titulo">Pechuga de pollo de pollo</span><br>
-						<span class="desc_txt">As they rounded a bend in the path that ran beside the river, Lara recognized the silhouette of a fig tree atop a nearby hill. The weather was hot and the days were long. The fig tree was in full leaf, but not yet bearing fruit.</span>
-					</div>
-				</div>
-				<div class="platillos light">
-					<div class="platillos_fotos" id="pechuga"></div>
-					<div class="platillos_desc">
-						<span class="desc_titulo">Pechuga de pollo de pollo</span><br>
-						<span class="desc_txt">As they rounded a bend in the path that ran beside the river, Lara recognized the silhouette of a fig tree atop a nearby hill. The weather was hot and the days were long. The fig tree was in full leaf, but not yet bearing fruit.</span>
-					</div>
-				</div>
-				<div class="platillos light">
-					<div class="platillos_fotos" id="pechuga"></div>
-					<div class="platillos_desc">
-						<span class="desc_titulo">Pechuga de pollo de pollo</span><br>
-						<span class="desc_txt">As they rounded a bend in the path that ran beside the river, Lara recognized the silhouette of a fig tree atop a nearby hill. The weather was hot and the days were long. The fig tree was in full leaf, but not yet bearing fruit.</span>
-					</div>
-				</div>
-				<div class="platillos light">
-					<div class="platillos_fotos" id="pechuga"></div>
-					<div class="platillos_desc">
-						<span class="desc_titulo">Pechuga de pollo de pollo</span><br>
-						<span class="desc_txt">As they rounded a bend in the path that ran beside the river, Lara recognized the silhouette of a fig tree atop a nearby hill. The weather was hot and the days were long. The fig tree was in full leaf, but not yet bearing fruit.</span>
-					</div>
-				</div>
-				<div class="platillos light">
-					<div class="platillos_fotos" id="pechuga"></div>
-					<div class="platillos_desc">
-						<span class="desc_titulo">Pechuga de pollo de pollo</span><br>
-						<span class="desc_txt">As they rounded a bend in the path that ran beside the river, Lara recognized the silhouette of a fig tree atop a nearby hill. The weather was hot and the days were long. The fig tree was in full leaf, but not yet bearing fruit.</span>
+						<span class="desc_titulo">Pescado asado</span><br>
+						<span class="desc_txt">
+							-	Pescado del nilo asado
+							-	Verduras al vapor o ensalada verde
+							-	Sopa de verduras o consome de pollo
+						</span>
 					</div>
 				</div>
 			</div>			

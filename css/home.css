@@ -6,12 +6,26 @@ body{
     width: 100%;
 }
 #menu {
-    background-color: #000;
+    background-color: rgba(0,0,0,0.5);
     height: 45px;
     border-bottom: 3px solid #F49828;
     position: fixed;
     top: 0;
     z-index: 3;
+}
+#menu_display {
+    width: 40px;
+    height: 30px;
+    margin: 7px;
+    display: none;
+}
+#menu_display span {
+    display: inline-block;
+    border: 2px solid #F49828;
+    width: 36px;
+    float: left;
+    margin: 3px 0px;
+    cursor: pointer;
 }
 #menu_content {
     width: 800px;
@@ -77,6 +91,7 @@ body{
 }
 #menus{
 	height: 800px;
+    padding-top: 90px;
 }
 #menus_content {
     margin: auto;
@@ -106,8 +121,7 @@ body{
     background-color: rgba(0,0,0,0.5);
     color: #FFFFFF;
     top: 0px;
-    display: block;
-    visibility: hidden;
+    display: none;
 }
 span.desc_titulo {
     display: inline-block;
@@ -121,4 +135,50 @@ span.desc_txt {
     text-align: center;
     margin: 20px;
 }
+
+#salmon{background-image: url("../images/menu/salmon.jpg");}
+#teriyaki{background-image: url("../images/menu/teriyaki.jpg");}
+#crujimi{background-image: url("../images/menu/crujimi.jpg");}
 #pechuga{background-image: url("../images/menu/pechuga.jpg");}
+#pescado{background-image: url("../images/menu/pescado.jpg");}
+
+#menus_title {
+    font-family: "Roboto",sans-serif;
+    text-align: center;
+    font-size: 35px;
+}
+#menus_title {
+    font-family: "Roboto",sans-serif;
+    text-align: center;
+    font-size: 35px;
+    margin: 30px 0px;
+}
+@media(max-width: 900px){
+    #menus_content {
+        width: 600px;
+    }
+}
+@media(max-width: 800px){
+    #menu_content {
+        width: 100%;
+        display: none;
+    }
+    .menu_element {
+        width: 100%;
+        background-color: rgba(0,0,0,0.5);
+        margin: 0;
+        border-bottom: 1px solid #F49828;
+    }
+    .menu_element:hover {
+        background-color: #F49828;
+        color: #FFFFFF;
+    }
+    #menu_display {
+        display: block;
+    }
+}
+@media(max-width: 600px){
+    #menus_content {
+        width: 300px;
+    }
+}
