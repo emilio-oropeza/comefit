@@ -181,11 +181,6 @@ span.desc_txt {
     font-size: 40px;
     padding: 50px 0px;
 }
-.somo_txts {
-    width: 400px;
-    display: inline-block;
-    float: left;
-}
 #somos_content {
     width: 800px;
     margin: auto;
@@ -247,6 +242,22 @@ span.desc_txt {
     .platillos_desc{
         display: block;
     }
+    #txt1 {
+        text-align: center;
+    }
+    #txt2 {
+        text-align: center;
+    }
+    #somos_content {
+        width: 600px;
+    }
+    .somos_txt_img{
+        width: 200px
+    }
+    .somos_txt_img img{
+        width: 200px;
+        height: auto;
+    }
 }
 @media(max-width: 600px){
     #menus_content {
@@ -265,5 +276,8 @@ span.desc_txt {
         height: 200px;
         line-height: 200px;
         font-size: 45px;
+    }
+    #somos{
+        height: 1000px;
     }
 }
