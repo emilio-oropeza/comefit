@@ -6,17 +6,18 @@ body{
     width: 100%;
 }
 #menu {
-    background-color: rgba(0,0,0,0.5);
+    background-color: #000000;
     height: 45px;
     border-bottom: 3px solid #F49828;
     position: fixed;
     top: 0;
-    z-index: 3;
+    z-index: 10;
 }
 #menu_display {
     width: 40px;
     height: 30px;
     margin: 7px;
+    float: left;
     display: none;
 }
 #menu_display span {
@@ -26,6 +27,18 @@ body{
     float: left;
     margin: 3px 0px;
     cursor: pointer;
+}
+#menu_movil_logo {
+    color: rgb(255, 255, 255);
+    float: left;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    font-size: 28px;
+    width: 100%;
+    position: absolute;
+    z-index: -5;
+    display: none;
 }
 #menu_content {
     width: 800px;
@@ -51,6 +64,8 @@ body{
     background-size: cover;
     background-image: url("../images/cover.jpg");
     position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 #portada_fill {
     position: absolute;
@@ -153,6 +168,53 @@ span.desc_txt {
     font-size: 35px;
     margin: 30px 0px;
 }
+#somos{
+    height: 800px;
+    background-color: #37474F;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #FFF;
+    font-size: 18px;
+}
+#somos_titulo {
+    text-align: center;
+    font-size: 40px;
+    padding: 50px 0px;
+}
+.somo_txts {
+    width: 400px;
+    display: inline-block;
+    float: left;
+}
+#somos_content {
+    width: 800px;
+    margin: auto;
+    position: relative;
+}
+.somo_txts {
+    width: 400px;
+    display: inline-block;
+    float: left;
+    padding: 30px 0px;
+}
+#txt1 {
+    text-align: right;
+}
+#txt2 {
+    text-align: left;
+}
+.somos_txt_img {
+    width: 400px;
+    display: inline-block;
+    float: left;
+    height: 200px;
+}
+.somos_txt_img img {
+    position: relative;
+    height: 100%;
+    width: auto;
+    margin: auto;
+}
 @media(max-width: 900px){
     #menus_content {
         width: 600px;
@@ -161,6 +223,12 @@ span.desc_txt {
 @media(max-width: 800px){
     #menu_content {
         width: 100%;
+        display: none;
+    }
+    #menu_movil_logo{
+        display: block;
+    }
+    #menu_web_logo{
         display: none;
     }
     .menu_element {
@@ -183,5 +251,19 @@ span.desc_txt {
 @media(max-width: 600px){
     #menus_content {
         width: 300px;
+    }
+     #portada{
+        height: 100vh;
+        background-size: 200vw 100vh;
+    }
+    #portada_content {
+        width: 90%;
+        height: 60vh;
+    }
+    #portada_logo {
+        width: 200px;
+        height: 200px;
+        line-height: 200px;
+        font-size: 45px;
     }
 }
