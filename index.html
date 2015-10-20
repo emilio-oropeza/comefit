@@ -1,133 +1,413 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	<title>ComeFit</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, minimal-ui">
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,700,900' rel='stylesheet' type='text/css'>
-	<link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet" type="text/css">
-	<link href="css/home.css?v=1.0.3" rel="stylesheet" type="text/css">
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
-	<script type="text/javascript" src="js/home.js?v=1.0.3"></script>
-	<style>
-		html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
-			background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
-			border: 0 none;
-			font-size: 100%;
-			margin: 0;
-			outline: 0 none;
-			padding: 0;
-			vertical-align: baseline;
-		}
-	</style>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>comefit</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+    <!-- Custom Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/creative.css" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
 </head>
-<body>
-	<div id="content">
-		<div id="menu" class="elemento">
-			<a href="#portada"><div id="menu_movil">
-				<div id="menu_display">
-					<span></span>
-					<span></span>
-					<span></span>
-				</div>
-				<div id="menu_movil_logo" class="logos">come<span>fit</span></div>
-			</div></a>
-			<div id="menu_content">
-				<a href="#portada"><span id="menu_web_logo" class="menu_element logos">come<span>fit</span></span></a>
-				<a href="#menus"><span class="menu_element">menús</span></a>
-				<a href="#menu"><span class="menu_element">¿quiénes somos?</span></a>		
-				<a href="#menu"><span class="menu_element">contacto</span></a>
-			</div>
-		</div>
-		<div id="portada" class="elemento">
-			<div id="portada_fill"></div>
-			<div id="portada_content">
-				<div id="portada_logo"><span class="logos" id="inicio">come<span>fit</span></div>
-				<div id="portada_bnt">ORDENA AQUÍ</div>
-			</div>			
-		</div>
-		<div id="somos" class="elemento">
-			<div id="somos_titulo">¿Quiénes Somos?</div>
-			<div id="somos_content">
-				<div class="somo_txts">
-					En comeFit entendemos que llevar una dieta saludable no es cosa fácil y por eso te ayudamos a que tengas platillos ricos y saludables siempre cerca de ti
 
-					Nosotros diseñamos platillos para distintas necesidades y capacitamos a las personas para que los hagan con todo el sabor y te los lleven hasta la puerta de tu casa.
-				</div>
-				<div id="txt1" class="somos_txt_img"><img src="images/canasta.png"></div>
-				<div id="txt2" class="somos_txt_img"><img src="images/ensalada.png"></div>
-				<div class="somo_txts">
-					Elige uno de nuestros platillos recomendados para necesidades específicas, ingresa tus datos y ¡espéralo en donde quiera que estés!
+<body id="page-top">
 
-					Para nuestros clientes frecuentes también ofrecemos un servicio de crédito  que pueden adquirir por un menor precio.
-				</div>				
-			</div>
-			<div></div>
-		</div>
-		<div id="menus" class="elemento">
-			<div id="menus_title">
-				<span>Menus</span><br>
-				ven a probar los menus que tenemos para ti
-			</div>
-			<div id="menus_content">
-				<div class="platillos light">
-					<div class="platillos_fotos" id="salmon"></div>
-					<div class="platillos_desc">
-						<span class="desc_titulo">Salmón en costra de limón</span><br>
-						<span class="desc_txt">
-							-	Salmon asado con perejil, miel, mostaza, limon, ajo, avena molida<br>
-							-	verduras al vapor<br>
-							-	pasta integral o arroz integral<br>
-							-	Sopa de verduras o consome de pollo
-						</span>
-					</div>
-				</div>
-				<div class="platillos light">
-					<div class="platillos_fotos" id="teriyaki"></div>
-					<div class="platillos_desc">
-						<span class="desc_titulo">Pollo Teriyaki</span><br>
-						<span class="desc_txt">
-							-	Pechuga de pollo asada en trozos mezclado con brócoli, zanahoria, calabaza, soya, mostaza y ajonjoli<br>
-							-	4 torrillas de maíz o 1 taza de arroz/pasta integral<br>
-							-	Sopa de verduras o consome de pollo<br>
-						</span>
-					</div>
-				</div>
-				<div class="platillos light">
-					<div class="platillos_fotos" id="crujimi"></div>
-					<div class="platillos_desc">
-						<span class="desc_titulo">Crujimi</span><br>
-						<span class="desc_txt">
-							-	3 tiritas de surimi mezcladas con, zanahoria, pepino, limon y aguacate<br>
-							-	2 tostadas horneadas o 1 taza de arroz/pasta integral<br>
-							-	Sopa de verduras o consome de pollo
-						</span>
-					</div>
-				</div>
-				<div class="platillos light">
-					<div class="platillos_fotos" id="pechuga"></div>
-					<div class="platillos_desc">
-						<span class="desc_titulo">Pechuga de pollo asada</span><br>
-						<span class="desc_txt">
-							-	Pechuga de pollo asada<br>
-							-	Verduras al vapor o ensalada verde<br>
-							-	Sopa de verduras o consome de pollo
-						</span>
-					</div>
-				</div>
-				<div class="platillos light">
-					<div class="platillos_fotos" id="pescado"></div>
-					<div class="platillos_desc">
-						<span class="desc_titulo">Pescado asado</span><br>
-						<span class="desc_txt">
-							-	Pescado del nilo asado<br>
-							-	Verduras al vapor o ensalada verde<br>
-							-	Sopa de verduras o consome de pollo
-						</span>
-					</div>
-				</div>
-			</div>			
-		</div>
-	</div>
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">comefit</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#about">Acerca</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services">Servicios</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#portfolio">Menú</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1>comefit</h1>
+                <hr>
+                <p>Elige uno de nuestros platillos recomendados para necesidades específicas, ingresa tus datos y ¡espéralo en donde quiera que estés!</p>
+                <a href="#about" class="btn btn-primary btn-xl page-scroll">Conócenos</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-primary" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Tenemos lo que necesitas</h2>
+                    <hr class="light">
+                    <p class="text-faded">En comeFit entendemos que llevar una dieta saludable no es cosa fácil y por eso te ayudamos a que tengas platillos ricos y saludables siempre cerca de ti</p>
+                    <a href="#" class="btn btn-default btn-xl">Pide ahora!!</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">A tu servicio</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-diamond wow bounceIn text-primary"></i>
+                        <h3>Calidad</h3>
+                        <p class="text-muted">diseñamos platillos para distintas necesidades</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-paper-plane wow bounceIn text-primary" data-wow-delay=".1s"></i>
+                        <h3>Envios</h3>
+                        <p class="text-muted">¡espéralo en donde quiera que estés!</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-newspaper-o wow bounceIn text-primary" data-wow-delay=".2s"></i>
+                        <h3>Menus diarios</h3>
+                        <p class="text-muted">Diferentes platillos cada día</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-heart wow bounceIn text-primary" data-wow-delay=".3s"></i>
+                        <h3>El sabor casero</h3>
+                        <p class="text-muted">Capacitamos a las personas para que los hagan con todo el sabor</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="no-padding" id="portfolio">
+        <div class="container-fluid">
+            <div class="row no-gutter">
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="images/menu/huevos.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-name">
+                                    Huevos revueltos
+                                </div>
+                                <div class="project-category text-faded">
+                                    - 3 huevos completos revueltos con 6 claras<br>
+                                    - 30 gr de aguacate<br>
+                                    - 2 rebanadas de pan integral con crema de cacahuate<br>
+                                    - 1 platano<br>
+                                    - 150gr de gelatina light: uva, fresa, mango o piña.
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="images/menu/ciabatta.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-name">
+                                    Chapata integral
+                                </div>
+                                <div class="project-category text-faded">
+                                    - 1 chapata integral<br>
+                                    - ½ taza de germen<br>
+                                    - ½ taza de espinaca<br>
+                                    - 60gr de queso panela<br>
+                                    - 100gr de pechuga de pollo<br>
+                                    - 30gr de aguacate<br>
+                                    - 1 cda de mostaza<br>
+                                    - 150gr de gelatina light                                    
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="images/menu/salmon.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-name">
+                                    Salmón en costra de limón
+                                </div>
+                                <div class="project-category text-faded">
+                                    - 200gr de salmon asado<br>
+                                    - 2 tazas de verduras al vapor<br>
+                                    - 1 taza de pasta integral o arroz integral<br>
+                                    - Sopa de verduras o consome de pollo
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="images/menu/teriyaki.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-name">
+                                    Pollo Teriyaki
+                                </div>
+                                <div class="project-category text-faded">
+                                    - 200gr de pechuga de pollo<br>
+                                    - 4 torrillas de maíz o 1 taza de arroz/pasta integral<br>
+                                    - Sopa de verduras o consome de pollo
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="images/menu/crujimi.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-name">
+                                    Crujimi
+                                </div>
+                                <div class="project-category text-faded">
+                                    - Tiritas de surimi con zanahoria, pepino, limon y aguacate<br>
+                                    - 2 tostadas horneadas o 1 taza de arroz/pasta integral<br>
+                                    - Sopa de verduras o consome de pollo
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="images/menu/pechuga.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-name">
+                                    Pechuga de pollo asada
+                                </div>
+                                <div class="project-category text-faded">
+                                    - 120gr de pechuga de pollo asada<br>
+                                    - 2 tazas de verdura al vapor o ensalada verde<br>
+                                    - Sopa de verduras o consome de pollo
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="images/menu/pescado.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-name">
+                                    Pescado asado
+                                </div>
+                                <div class="project-category text-faded">
+                                    - 120gr de pescado <br>
+                                    - 2 tazas de verdura al vapor o ensalada verde<br>
+                                    - Sopa de verduras o consome de pollo
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="images/menu/quesadillas.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-name">
+                                    Quesadillas
+                                </div>
+                                <div class="project-category text-faded">
+                                    - 2 tortillas de maiz<br>
+                                    - 40gr de queso panela light<br>
+                                    - Ensalada verde<br>
+                                    - Gelatina light
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="images/menu/sopes.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-name">
+                                    Sopecitos de nopal 
+                                </div>
+                                <div class="project-category text-faded">
+                                    - 4 Nopales asados<br>
+                                    - ½ taza de frijoles negros machacados<br>
+                                    - 90gr de pechuga de pollo<br>
+                                    - Lechuga<br>
+                                    - Queso panela light rallado<br>
+                                    - Gelatina light
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="images/menu/ensalada.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-name">
+                                    Ensalada de pechuga de pavo
+                                </div>
+                                <div class="project-category text-faded">
+                                    - 50 gr de pechuga de pavo  <br>  
+                                    - Ensalada verde<br>
+                                    - 1 paquete de galletas salmas
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="images/menu/atun.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-name">
+                                    Atún con aguacate
+                                </div>
+                                <div class="project-category text-faded">
+                                    - 2 latas de atún en agua<br>
+                                    - Aguacate<br>
+                                    - Ensalada verde<br>
+                                    - 4 tortillas de nopal<br>
+                                    - Gelatina light
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="images/menu/camarones.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-name">
+                                    Camarones con aguacate
+                                </div>
+                                <div class="project-category text-faded">
+                                    - 100gr de camarones<br>
+                                    - 30gr de aguacate<br>
+                                    - 2 tortillas de maíz<br>
+                                    - Ensalada verde<br>
+                                    - Gelatina light  
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <aside class="bg-dark">
+        <div class="container text-center">
+            <div class="call-to-action">
+                <h2>¿Te gusto algo?</h2>
+                <a href="#" class="btn btn-default btn-xl wow tada">¡Pide ahora!</a>
+            </div>
+        </div>
+    </aside>
+
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">¡Contactanos!</h2>
+                    <hr class="primary">
+                    <p>Comunicate con nostros</p>
+                </div>
+                <div class="col-lg-4 col-lg-offset-2 text-center">
+                    <i class="fa fa-phone fa-3x wow bounceIn"></i>
+                    <p>123-456-6789</p>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                    <p><a href="mailto:comefit@gmail.com">comefit@gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/wow.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/creative.js"></script>
+
 </body>
+
 </html>
